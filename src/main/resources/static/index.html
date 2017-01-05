@@ -1,77 +1,60 @@
 <!DOCTYPE html>
 <!-- saved from url=(0043)http://thevectorlab.net/metrolab/login.html -->
 <html lang="en"><!--<![endif]--><!-- BEGIN HEAD --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-   
-   <title>Login</title>
-   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-   <meta content="" name="description">
-   <meta content="" name="author">
-   <link href="./css/bootstrap.min.css" rel="stylesheet">
-   <link href="./css/bootstrap-responsive.min.css" rel="stylesheet">
-   <link href="./css/font-awesome.css" rel="stylesheet">
-   <link href="./css/style.css" rel="stylesheet">
-   <link href="./css/style-responsive.css" rel="stylesheet">
-   <link href="./css/style-default.css" rel="stylesheet" id="style_color">
-</head>
-<!-- END HEAD -->
-<!-- BEGIN BODY -->
-<body class="lock" cz-shortcut-listen="true">
-    <div class="lock-header">
-        <!-- BEGIN LOGO -->
-        <a class="center" id="logo" href="http://thevectorlab.net/metrolab/index.html">
-            <img class="center" alt="logo" src="./css/logo.png">
-        </a>
-        <!-- END LOGO -->
-    </div>
-    <div class="login-wrap">
-        <div class="metro single-size red">
-            <div class="locked">
-                <i class="icon-lock"></i>
-                <span>Login</span>
-            </div>
-        </div>
-        <div class="metro double-size green">
-            <form action="http://thevectorlab.net/metrolab/index.html">
-                <div class="input-append lock-input">
-                    <input type="text" class="" placeholder="Username">
-                </div>
-            </form>
-        </div>
-        <div class="metro single-size purple login">
-            <span>&nbsp;</span>
-        </div>
-        <div class="metro single-size navy-blue">
-            <div class="locked">
-            	<span>&nbsp;</span>
-            </div>
-        </div>
-        <div class="metro double-size yellow">
-            <form action="http://thevectorlab.net/metrolab/index.html">
-                <div class="input-append lock-input">
-                    <input type="password" class="" placeholder="Password">
-                </div>
-            </form>
-        </div>
-        <div class="metro single-size terques login">
-            <form action="http://thevectorlab.net/metrolab/index.html">
-                <button type="submit" class="btn login-btn">
-                    Login
-                    <i class=" icon-long-arrow-right"></i>
-                </button>
-            </form>
-        </div>
-        <div class="login-footer">
-            <div class="remember-hint pull-left">
-                <input type="checkbox" id=""> Register <span>&nbsp;</span>
-            </div>
-            <div class="remember-hint pull-left">
-                <input type="checkbox" id=""> Remember Me
-            </div>
-            <div class="forgot-hint pull-right">
-                <a id="forget-password" class="" href="javascript:;">Forgot Password?</a>
-            </div>
-        </div>
-    </div>
 
-<!-- END BODY -->
-</body></html>
+        <title>Login</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="description">
+        <meta content="" name="author">
+        <link href="./css/bootstrap.min.css" rel="stylesheet">
+        <link href="./css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="./css/font-awesome.css" rel="stylesheet">
+        <link href="./css/style.css" rel="stylesheet">
+        <link href="./css/style-responsive.css" rel="stylesheet">
+        <link href="./css/style-default.css" rel="stylesheet" id="style_color">
+    </head>
+    <!-- END HEAD -->
+    <!-- BEGIN BODY -->
+    <body class="container">
+        <div class="span10 offset2">
+            <div class="widget red">
+                <div class="widget-title">
+                    <h4><i class=" icon-key"></i> User Login </h4>
+                    <span class="tools">
+                        <a href="javascript:;" class="icon-chevron-down"></a>
+                        <a href="javascript:;" class="icon-remove"></a>
+                    </span>
+                </div>
+                <div class="widget-body form">
+                    <!-- BEGIN FORM-->
+                    <form action="#" class="form-horizontal">
+                        <div class="control-group success">
+                            <label class="control-label" for="inputSuccess">User Name </label>
+                            <div class="controls">
+                                <input type="text" class="span6" id="inputSuccess" />
+                                <span class="help-inline ">Enter user name</span>
+                            </div>
+                        </div>
+
+                        <div class="control-group error">
+                            <label class="control-label" for="inputError">Password</label>
+                            <div class="controls">
+                                <input type="text" class="span6" id="inputError" />
+                                <span class="help-inline">Enter password</span>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <div class="row-fluid">
+                                <div class="span6"><button type="submit" class="btn btn-success">Login</button></div>
+                                <div class="span6"><button type="button" class="btn btn-primary pull-right">Register</button></div>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- END FORM-->
+                </div>
+            </div>
+            <!-- END VALIDATION STATES-->
+        </div>
+        <!-- END BODY -->
+    </body></html>
