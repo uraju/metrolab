@@ -4639,7 +4639,7 @@ margin-right: 21px;
     margin-right: 10px;
 }
 .v-height {
-    display:table !important;
+    display:flex !important;
     height: 100%;
 }
 .v-align {
