@@ -4639,7 +4639,7 @@ margin-right: 21px;
     margin-right: 10px;
 }
 .v-height {
-    display:table !important;
+    display:flex !important;
     height: 100%;
 }
 .v-align {
@@ -4686,3 +4686,42 @@ margin-right: 21px;
           justify-content : center;    
 }
 
+
+.v-height-33 {
+   display:table-cell;
+    vertical-align:middle;
+  min-height: 33%;  /* Fallback for vh unit */
+  min-height: 33vh; /* You might also want to use
+                        'height' property instead.
+                        
+                        Note that for percentage values of
+                        'height' or 'min-height' properties,
+                        the 'height' of the parent element
+                        should be specified explicitly.
+  
+                        In this case the parent of '.vertical-center'
+                        is the <body> element   display: flex; */
+
+  /* Make it a flex container */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  
+  /* Align the bootstrap's container vertically */
+    -webkit-box-align : center;
+  -webkit-align-items : center;
+       -moz-box-align : center;
+       -ms-flex-align : center;
+          align-items : center;
+  
+  /* In legacy web browsers such as Firefox 9 specify the width of the flex box
+  width: 100%;
+   */
+         -webkit-box-pack : center;
+            -moz-box-pack : center;
+            -ms-flex-pack : center;
+  -webkit-justify-content : center;
+          justify-content : center;    
+}
