@@ -4725,3 +4725,6 @@ margin-right: 21px;
   -webkit-justify-content : center;
           justify-content : center;    
 }
+.login-window {
+	position: fixed; 
+}
