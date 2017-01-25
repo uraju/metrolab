@@ -97,8 +97,8 @@
             </div>
             <div class="z-index2">
                 <div class="login-box">
-                    <div class="col-sm-12 col-md-10 col-md-offset-1">
-                        <div class="widget red">
+                    <div class="col-sm-12 col-md-10 col-md-offset-1" style="box-sizing: inherit">
+                        <div id="div-login" class="widget red">
                             <div class="widget-title">
                                 <h4>
                                     <i class=" icon-key"></i> User Login
@@ -134,16 +134,18 @@
         </div>
         <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
         <script>
+            /* no longer used, remove it
             $('#btn1').on('click', function () {
                 $('.tile-box').css('box-sizing', 'content-box');
             });
             $('#btn2').on('click', function () {
                 $('.tile-box').css('box-sizing', 'border-box');
-            });
+            }); */
             // fill with boder-box on page load
             $(function () {
                 $('.tile-box').css('box-sizing', 'border-box');
-                //$('.login-box').css('box-sizing', 'border-box');
+                $('.login-box').css('box-sizing', 'border-box');
+                $('#div-login').css('box-sizing', 'border-box');
             });
         </script>
     </body></html>
