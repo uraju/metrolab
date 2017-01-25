@@ -1,105 +1,149 @@
-<!DOCTYPE html>
-<!-- saved from url=(0043)http://thevectorlab.net/metrolab/login.html -->
-<html lang="en"><!--<![endif]--><!-- BEGIN HEAD --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-        <title>Login</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="description">
-        <meta content="" name="author">
-        <link href="./css/bootstrap.min.css" rel="stylesheet">
-        <link href="./css/bootstrap-responsive.min.css" rel="stylesheet">
+<!DOCTYPE html><html class=''>
+    <head>
+        <link rel='stylesheet prefetch'
+              href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css'>
         <link href="./css/font-awesome.css" rel="stylesheet">
         <link href="./css/icomoon.css" rel="stylesheet">
         <link href="./css/style.css" rel="stylesheet">
         <link href="./css/style-responsive.css" rel="stylesheet">
         <link href="./css/style-default.css" rel="stylesheet" id="style_color">
+        <style>
+            .parent {
+                width: 100%;
+                min-height: 99%;  
+                min-height: 99vh;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+            }
+            .tile-box {
+                width: 25%;
+                padding: 1em;
+                /* border: 1px solid black; */
+                float: left;
+                min-height: 33%;  
+                min-height: 33vh; 
+                text-align: center;
+            }
+            .z-index1 {
+                z-index: -1;
+            }
+            .z-index2 {
+                z-index: 1;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+            }
+            .login-box {
+                width: 40%;
+                width: 40vw;
+                padding: 1em;
+                /* border: 1px solid blue; */
+                float: left;
+                height: 33%;  
+                height: 33vh; 
+                text-align: center;
+                margin-top: 33vh;
+                margin-bottom: 33vh;
+                margin-left: 30vw;
+                margin-right: 30vw;
+            }
+            .font-25vw {
+                font-size: 30px;
+                font-size: 25vmin;
+            }
+
+        </style>
     </head>
-    <!-- END HEAD -->
-    <!-- BEGIN BODY -->
-    <body class="container v-height">
-        <div class="v-align span12">
-          <div class="span12 bg-layer">
-          <div class="row-fluid v-height-33">
-            <div class="span3 ">
-                <span class="ico-eye font-25vw" style="color: #F0F8FF;"></span>
-            </div><!--/span-->
-            <div class="span3">
-                <i class="ico-deaf font-25vw" style="color: #FAEBD7;"></i>
-            </div><!--/span-->
-            <div class="span3">
-                <span class="ico-tty font-25vw" style="color: #F5F5DC;"></span>
-            </div><!--/span-->
-            <div class="span3">
-                <span class="ico-braille font-25vw" style="color: #DEB887;"></span>
-            </div><!--/span-->
-          </div><!--/row-->
-          <div class="row-fluid v-height-33">
-            <div class="span3">
-                <span class="ico-wheelchair-alt font-25vw" style="color: #EE82EE;"></span>
-            </div><!--/span-->
-            <div class="span3">
-                <span class="ico-eye-minus font-25vw" style="color: #B8860B;"></span>
-            </div><!--/span-->
-            <div class="span3">
-                <span class="ico-spinner9 font-25vw" style="color: #0000CD;"></span>
-            </div><!--/span-->
-            <div class="span3">
-                <span class="ico-wheelchair font-25vw" style="color: #800080;"></span>
-            </div><!--/span-->
-          </div><!--/row-->
-          <div class="row-fluid v-height-33">
-            <div class="span3">
-                <span class="ico-blind font-25vw" style="color: #808000;"></span>
-            </div><!--/span-->
-            <div class="span3">
-                <span class="ico-assistive-listening-systems font-25vw" style="color: #48D1CC;"></span>
-            </div><!--/span-->
-            <div class="span3">
-                <span class="ico-signing font-25vw" style="color: #9370DB;"></span>
-            </div><!--/span-->
-            <div class="span3">
-                <span class="ico-asl-interpreting font-25vw" style="color: #87CEFA;"></span>
-            </div><!--/span-->
-          </div><!--/row-->
-        </div><!--/span-->
-        <div class="clearfix span6 offset3">
-                    <div class="widget red">
-                        <div class="widget-title">
-                            <h4><i class=" icon-key"></i> User Login </h4>
-                            <span class="tools">
-                                <a href="javascript:;" class="icon-chevron-down"></a>
-                                <a href="javascript:;" class="icon-remove"></a>
-                            </span>
-                        </div>
-                        <div class="widget-body form">
-                            <!-- BEGIN FORM-->
-                            <form action="#" class="form-horizontal">
-                                <div class="control-group success">
-                                    <label class="control-label" for="inputSuccess">User Name </label>
-                                    <div class="controls">
-                                        <input type="text" id="inputSuccess" />
-                                        <span class="help-inline ">Enter user name</span>
+    <body>
+        <div class="parent">
+            <div class="z-index1">
+                <div class="tile-box">
+                    <span class="ico-eye font-25vw" style="color: #F0F8FF;"></span>
+                </div>
+                <div class="tile-box">
+                    <span class="ico-deaf font-25vw" style="color: #FAEBD7;"></span>
+                </div>
+                <div class="tile-box">
+                    <span class="ico-tty font-25vw" style="color: #F5F5DC;"></span>
+                </div>
+                <div class="tile-box">
+                    <span class="ico-braille font-25vw" style="color: #DEB887;"></span>
+                </div>
+                <div class="tile-box">
+                    <span class="ico-wheelchair-alt font-25vw" style="color: #EE82EE;"></span>
+                </div>
+                <div class="tile-box">
+                    <span class="ico-eye-minus font-25vw" style="color: #B8860B;"></span>
+                </div>
+                <div class="tile-box">
+                    <span class="ico-spinner9 font-25vw" style="color: #0000CD;"></span>
+                </div>
+                <div class="tile-box">
+                    <span class="ico-wheelchair font-25vw" style="color: #800080;"></span>
+                </div>
+                <div class="tile-box">
+                    <span class="ico-blind font-25vw" style="color: #808000;"></span>
+                </div>
+                <div class="tile-box">
+                    <span class="ico-assistive-listening-systems font-25vw" style="color: #48D1CC;"></span>
+                </div>
+                <div class="tile-box">
+                    <span class="ico-signing font-25vw" style="color: #9370DB;"></span>
+                </div>
+                <div class="tile-box">
+                    <span class="ico-asl-interpreting font-25vw" style="color: #87CEFA;"></span>
+                </div>
+            </div>
+            <div class="z-index2">
+                <div class="login-box">
+                    <div class="col-sm-12 col-md-10 col-md-offset-1">
+                        <div class="widget red">
+                            <div class="widget-title">
+                                <h4>
+                                    <i class=" icon-key"></i> User Login
+                                </h4>
+                                <span class="tools"> <a href="javascript:;"
+                                                        class="icon-chevron-down"></a> <a href="javascript:;"
+                                                        class="icon-remove"></a>
+                                </span>
+                            </div>
+                            <div class="widget-body form">
+                                <form action="" id="loginForm">
+                                    <div class="form-group input-group">
+                                        <span class="input-group-addon"><i
+                                                class="icon-user" style="color: #9370DB;"></i></span> <input
+                                            class="form-control" type="text" name='username'
+                                            placeholder="username" />
                                     </div>
-                                </div>
-
-                                <div class="control-group error">
-                                    <label class="control-label" for="inputError">Password</label>
-                                    <div class="controls">
-                                        <input type="text" id="inputError" />
-                                        <span class="help-inline">Enter password</span>
+                                    <div class="form-group input-group">
+                                        <span class="input-group-addon"><i
+                                                class="icon-lock" style="color: #808000;"></i></span> <input
+                                            class="form-control" type="password" name='password'
+                                            placeholder="password" />
                                     </div>
-                                </div>
-
-                                <div class="form-actions">
-                                    <button type="submit" class="btn btn-success">Login</button>
-                                    <button type="button" class="btn btn-primary pull-right">Register</button>
-                                </div>
-                            </form>
-                            <!-- END FORM-->
+                                    <div class="form-group">
+                                        <button type="button" class="btn btn-def btn-block">Login</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                    <!-- END VALIDATION STATES-->
                 </div>
-        </div>    
-        <!-- END BODY -->
+            </div>  
+        </div>
+        <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+        <script>
+            $('#btn1').on('click', function () {
+                $('.tile-box').css('box-sizing', 'content-box');
+            });
+            $('#btn2').on('click', function () {
+                $('.tile-box').css('box-sizing', 'border-box');
+            });
+            // fill with boder-box on page load
+            $(function () {
+                $('.tile-box').css('box-sizing', 'border-box');
+                //$('.login-box').css('box-sizing', 'border-box');
+            });
+        </script>
     </body></html>

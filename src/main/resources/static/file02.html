@@ -1,0 +1,152 @@
+<!DOCTYPE html><html class=''>
+<head>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="./css/font-awesome.css" rel="stylesheet">
+    <link href="./css/icomoon.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/style-responsive.css" rel="stylesheet">
+    <link href="./css/style-default.css" rel="stylesheet" id="style_color">
+<style class="local-bg">
+.parent {
+  width: 100%;
+  min-height: 99%;  
+  min-height: 99vh;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.tile-box {
+  width: 25%;
+  padding: 1em;
+  /* border: 1px solid black; */
+  float: left;
+  min-height: 33%;  
+  min-height: 33vh; 
+  text-align: center;
+}
+.z-index1 {
+  z-index: -1;
+}
+.z-index2 {
+  z-index: +1;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.login-box {
+  width: 40%;
+  width: 40vw;
+  padding: 1em;
+  border: 1px solid blue;
+  float: left;
+  height: 33%;  
+  height: 33vh; 
+  text-align: center;
+  margin-top: 33vh;
+  margin-bottom: 33vh;
+  margin-left: 30vw;
+  margin-right: 30vw;
+}
+.font-25vw {
+  font-size: 30px;
+  font-size: 25vmin;
+}
+
+</style>
+</head>
+<body>
+<div class="parent">
+  <div class="z-index1">
+  <div class="tile-box">
+    <span class="ico-eye font-25vw" style="color: #F0F8FF;"></span>
+  </div>
+  <div class="tile-box">
+    <span class="ico-deaf font-25vw" style="color: #FAEBD7;"></span>
+  </div>
+  <div class="tile-box">
+     <span class="ico-tty font-25vw" style="color: #F5F5DC;"></span>
+  </div>
+  <div class="tile-box">
+    <span class="ico-braille font-25vw" style="color: #DEB887;"></span>
+  </div>
+  <div class="tile-box">
+    <span class="ico-wheelchair-alt font-25vw" style="color: #EE82EE;"></span>
+  </div>
+  <div class="tile-box">
+    <span class="ico-eye-minus font-25vw" style="color: #B8860B;"></span>
+  </div>
+  <div class="tile-box">
+    <span class="ico-spinner9 font-25vw" style="color: #0000CD;"></span>
+  </div>
+  <div class="tile-box">
+    <span class="ico-wheelchair font-25vw" style="color: #800080;"></span>
+  </div>
+  <div class="tile-box">
+    <span class="ico-blind font-25vw" style="color: #808000;"></span>
+  </div>
+  <div class="tile-box">
+    <span class="ico-assistive-listening-systems font-25vw" style="color: #48D1CC;"></span>
+  </div>
+  <div class="tile-box">
+    <span class="ico-signing font-25vw" style="color: #9370DB;"></span>
+  </div>
+  <div class="tile-box">
+    <span class="ico-asl-interpreting font-25vw" style="color: #87CEFA;"></span>
+  </div>
+  </div>
+  <div class="clearfix z-index2">
+    <div class="login-box">
+                    <div class="widget red">
+                        <div class="widget-title">
+                            <h4><i class=" icon-key"></i> User Login </h4>
+                            <span class="tools">
+                                <a href="javascript:;" class="icon-chevron-down"></a>
+                                <a href="javascript:;" class="icon-remove"></a>
+                            </span>
+                        </div>
+                        <div class="widget-body form">
+                            <!-- BEGIN FORM-->
+                            <form action="#" class="form-horizontal">
+                                <div class="control-group success">
+                                    <label class="control-label" for="inputSuccess">User Name </label>
+                                    <div class="controls">
+                                        <input type="text" id="inputSuccess" />
+                                        <span class="help-inline ">Enter user name</span>
+                                    </div>
+                                </div>
+
+                                <div class="control-group error">
+                                    <label class="control-label" for="inputError">Password</label>
+                                    <div class="controls">
+                                        <input type="text" id="inputError" />
+                                        <span class="help-inline">Enter password</span>
+                                    </div>
+                                </div>
+
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn-success">Login</button>
+                                    <button type="button" class="btn btn-primary pull-right">Register</button>
+                                </div>
+                            </form>
+                            <!-- END FORM-->
+                        </div>
+                    </div>
+      </div>
+  </div>  
+</div>
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+<script>
+	$('#btn1').on('click', function () {
+		$('.tile-box').css('box-sizing', 'content-box');
+	});
+	$('#btn2').on('click', function () {
+		$('.tile-box').css('box-sizing', 'border-box');
+	});
+	// fill with boder-box on page load
+	$(function() {
+		$('.tile-box').css('box-sizing', 'border-box');
+		//$('.login-box').css('box-sizing', 'border-box');
+	});
+</script>
+</body></html>
