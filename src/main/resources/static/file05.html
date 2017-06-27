@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to list all the items in the array.</p>
+<button onclick="numbers.forEach(myFunction)">Try it</button>
+<p id="demo"></p>
+
+<script>
+demoP = document.getElementById("demo");
+var numbers = ["2016", "2017 ", "Jan 2017", "Jan - 2017"];
+
+function myFunction(item, index) {
+    demoP.innerHTML = demoP.innerHTML + "index[" + index + "]: " + item + " year: " + getCharYear(item)+  "<br>"; 
+}
+function getCharYear(year) {
+   year = year.trim();
+   var idx = year.indexOf(" ");
+   if (idx == -1) return year;
+   var value = year.split(/[ -]+/);
+   var lastIndexValue = value[value.length - 1];
+   if (value.length > 1) {
+       console.log(value);
+       return lastIndexValue;
+   }
+   return year;
+}
+</script>
+
+</body>
+</html>
